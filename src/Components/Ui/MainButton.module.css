@@ -1,0 +1,21 @@
+.sign_button{
+    background-color: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: url(../../images/btn-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 157px;
+    min-height: 48px;
+    font-size: 15px;
+    color: white;
+    font-family: var(--main_font);
+    font-weight: 800;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s;
+}
+.sign_button:hover{
+   color: var(--main_color);
+}

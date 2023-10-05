@@ -1,0 +1,113 @@
+.header{
+    min-height: 100vh !important;
+    overflow: hidden;
+    padding-top: 3.125rem;
+    background-image: url(../../images/slider_bg.e867552c.jpg);
+    background-size: cover;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.caption{
+    padding: 1.25rem;
+    margin-bottom: 3.125rem;
+}
+.caption h1{
+    font-size: 6.25rem;
+    color: white;
+    text-shadow: -0.0625rem 0.3125rem 0 var(--green);
+    font-weight: 900;
+    font-family: var(--roboto);
+    letter-spacing: 0.3125rem;
+}
+.sub_title{
+    padding:0.625rem 0.9375rem;
+    border-radius: 0.625rem;
+    color: var(--main_color);
+    background:linear-gradient(to left,transparent, transparent,transparent , rgba(69,248,130,.3));
+}
+.sub_title h6{
+    font-family: var(--poppins);
+    font-weight: 800;
+    font-size: 1.125rem;
+    letter-spacing: 0.25rem;
+}
+.caption p{
+    font-family: var(--poppins);
+    font-size: 1.625rem;
+    letter-spacing: 0.3125rem;
+    font-weight: 700;
+    color: white;
+}
+
+.img_header{
+    display: flex;
+    justify-content: center;
+    width: 25rem;
+
+    }
+    /* .img_header img{
+        transition: transform .5s;
+    }
+    .row:hover .img_header{
+        transform: translateX(-20px);
+    }
+    .img_header:hover{
+        transform: translateX(20px);
+    } */
+
+
+@media screen and (max-width:992px) {
+    .caption h1{
+        font-size:4.6875rem;
+    }
+}
+@media screen and (max-width:816px) {
+    .row{
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px 0;
+    }
+    .header_caption{
+        padding: 0 !important;
+        width: fit-content;
+    }
+    .caption{
+        text-align: center;
+        margin:auto;
+    }
+    .caption h1{
+        font-size:6.25rem;
+    }
+   
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .img_header{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .caption h1{
+        font-size:50px;
+    }
+    .img_header{
+        padding: 10px;
+        width:100%;
+    }
+}
+@media screen and (max-width:300px) {
+    .caption h1{
+        font-size:30px;
+    }
+    .img_header{
+        padding: 10px;
+        width:100%;
+    }
+}

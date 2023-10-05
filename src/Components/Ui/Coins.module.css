@@ -1,0 +1,44 @@
+.coin1{
+    position: absolute;
+    width: 30px;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%,-23%);
+    opacity: .4;
+    animation-name:coinOpacity;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.coin2{
+    position: absolute;
+    width: 50px;
+    top: 31%;
+    left: 60%;
+    transform: translate(-60%,-31%);
+    opacity: .4;
+    animation-name:coinOpacity;
+    animation-duration:2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.coin3{
+    position: absolute;
+    width: 30px;
+    top: 23%;
+    left: 10%;
+    transform: translate(-10%,-23%);
+    opacity: .4;
+    animation-name:coinOpacity;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+@keyframes coinOpacity {
+    0%{opacity:.4;}
+    50%{opacity:0;}
+    100%{opacity:.4;}
+}

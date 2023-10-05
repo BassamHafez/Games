@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700;800;900&family=Poppins:wght@600;700;800&family=Roboto:wght@900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0B0E13 !important;
+}
+
+:root{
+    --main_color:#45F882;
+    --green:rgba(69,248,130,.66);
+    --main_font:'Barlow', sans-serif;
+    --roboto:'Roboto', sans-serif;
+    --poppins:'Poppins', sans-serif;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+
+@media screen and (max-width:768px) {
+    body,html{
+        font-size: 14px !important;
+    }
+}
