@@ -2,7 +2,10 @@ import React from "react";
 import coins from "../../images/slider_shape02.png";
 import styles from "./Coins.module.css";
 
+
 const Coins = ({ type }) => {
+
+
   let classes;
 
   switch (type) {

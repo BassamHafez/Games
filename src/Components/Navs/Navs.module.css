@@ -45,6 +45,7 @@
 
 .brand{
     width:11.25rem;
+    height: 100%;
 }
 
 .burger_list{
@@ -78,19 +79,24 @@
 
 
 @media screen and (max-width:1150px) {
-    .nav_links{
-        display: none !important;
-    }
+    
     .list{
         display: block;
     }
+
+    .nav_content{
+        display: none !important;
+    }
 }
+
+
 @media screen and (max-width:600px) {
 
     .burger_list{
         display: none !important;
     }
 }
+
 @media screen and (max-width:536px) {
     .sign_btn{
         display: none ;
@@ -99,6 +105,7 @@
         width: 9.375rem;
     }
 }
+
 @media screen and (max-width:275px) {
     .brand{
         width: 4.375rem;
@@ -107,6 +114,7 @@
         font-size: 1.25rem;
     }
 }
+
 @media screen and (max-width:179px) {
     .brand{
         width: 2.5rem;

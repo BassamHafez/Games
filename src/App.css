@@ -13,6 +13,8 @@ body{
 :root{
     --main_color:#45F882;
     --green:rgba(69,248,130,.66);
+    --dark:#121A23;
+    --golden:#F2BD12;
     --main_font:'Barlow', sans-serif;
     --roboto:'Roboto', sans-serif;
     --poppins:'Poppins', sans-serif;
