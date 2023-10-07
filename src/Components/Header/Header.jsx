@@ -11,7 +11,10 @@ import brand_logo3 from "../../images/brand_logo03.png";
 
 const Header = () => {
   const { scrollY } = useScroll();
-  const yHero = useTransform(scrollY, [0,50,100], [0,-70,-120]);
+  const xCaption = useTransform(scrollY, [0,100,200], [0,-90,-150]);
+  const xHero = useTransform(scrollY, [0,100,200], [0,90,150]);
+  const yHero = useTransform(scrollY, [0,100,200], [0,-90,-150]);
+  const opacityHero = useTransform(scrollY, [0,100,200], [1,.5,0]);
   const opacityHeader = useTransform(
     scrollY,
     [0, 100, 200, 300, 600],
@@ -33,7 +36,7 @@ const Header = () => {
             <motion.div
               initial={{ opacity: 0, y: 150 }}
               animate={{ opacity: 1, y: 0 }}
-              style={{ y: yHero }}
+              style={{ x: xCaption,y:yHero,opacity:opacityHero }}
               className={styles.caption}
             >
               <div className={styles.sub_title}>
@@ -52,7 +55,7 @@ const Header = () => {
             <motion.div
               initial={{ opacity: 0, x: 150 }}
               animate={{ opacity: 1, x: 0 }}
-              style={{ y: yHero }}
+              style={{ x: xHero,y:yHero,opacity:opacityHero }}
               className={styles.img_header}
             >
               <motion.img            

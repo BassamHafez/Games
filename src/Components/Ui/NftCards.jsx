@@ -32,7 +32,7 @@ const NftCards = ({ img, title, name, price }) => {
           >
             <h6 className={styles.price}>
               {price}
-              <span className={styles.special_color}>ETH</span>
+              <span className='special_color'>ETH</span>
             </h6>
             <button className={styles.bid_btn}>
               Bid <FontAwesomeIcon className="ms-2" icon={faArrowRight} />

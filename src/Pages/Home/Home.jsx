@@ -9,7 +9,6 @@ import NftCards from "../../Components/Ui/NftCards";
 
 
 
-
 const Home = () => {
 
 

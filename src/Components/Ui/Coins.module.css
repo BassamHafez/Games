@@ -1,6 +1,6 @@
 .coin1{
     position: absolute;
-    width: 30px;
+    width: 1.875rem;
     top: 23%;
     left: 50%;
     transform: translate(-50%,-23%);
@@ -12,7 +12,7 @@
 }
 .coin2{
     position: absolute;
-    width: 50px;
+    width: 3.125rem;
     top: 31%;
     left: 60%;
     transform: translate(-60%,-31%);
@@ -24,7 +24,7 @@
 }
 .coin3{
     position: absolute;
-    width: 30px;
+    width: 1.875rem;
     top: 23%;
     left: 10%;
     transform: translate(-10%,-23%);

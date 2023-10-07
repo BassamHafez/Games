@@ -25,7 +25,6 @@
 .sec1_caption h5{
     color: white;
     margin-bottom: 0.75rem;
-    font-family: var(--main_font);
     font-weight: 700;
     cursor: pointer;
     transition: color .3s;
@@ -66,9 +65,7 @@
     font-weight: 900;
     color: white;
 }
-.special_color{
-    color: var(--golden)
-}
+
 
 @media screen and (max-width:440px) {
     .sec1_div{

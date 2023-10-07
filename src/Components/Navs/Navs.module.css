@@ -1,6 +1,5 @@
 .nav_list li a{
     color: white;
-    font-family: var(--main_font);
     font-weight: 700;
     font-size: 0.9375rem;
     transition: all .3s;
@@ -84,7 +83,7 @@
         display: block;
     }
 
-    .nav_content{
+    .special_hidden{
         display: none !important;
     }
 }
