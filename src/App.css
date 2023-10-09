@@ -17,6 +17,7 @@ body{
     --green:rgba(69,248,130,.66);
     --dark:#121A23;
     --golden:#F2BD12;
+    --gray:#9b9b9b2f;
     --main_font:'Barlow', sans-serif;
     --roboto:'Roboto', sans-serif;
     --poppins:'Poppins', sans-serif;
@@ -36,6 +37,11 @@ body{
 a{
     text-decoration: none !important;
 }
+button,input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
 .special_color{
     color: var(--golden)
 }
@@ -44,6 +50,9 @@ a{
 }
 .btn-close{
     display:none;
+}
+ul{
+    list-style: none;
 }
 
 @media screen and (max-width:768px) {

@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import HeaderTwo from "../../Components/Header/HeaderTwo";
+import LoginForm from "../../Components/Form/LoginForm";
+// import styles from "./Login.module.css";
 
 const Login = () => {
   return (
-    <h1>
-      login
-    </h1>
-  )
-}
+    <>
+      <HeaderTwo />
+      <LoginForm />
+    </>
+  );
+};
 
-export default Login
+export default Login;

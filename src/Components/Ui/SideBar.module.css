@@ -8,7 +8,7 @@
     width: 11.25rem;
 }
 .header{
-    border-bottom: 0.0625rem solid #9b9b9b2f;
+    border-bottom: 0.0625rem solid var(--gray);
 }
 .title{
     margin-top: 1.5625rem;
@@ -19,7 +19,7 @@
 .close_icon{
     font-size: 1.875rem;
     color:#adadad;
-    background-color: #9b9b9b2f;
+    background-color: var(--gray);
     padding: 0.4375rem;
     border-radius: 50%;
     cursor: pointer;
@@ -48,7 +48,7 @@
 }
 .subscribe_container{
     background-color: transparent !important;
-    border: 0.0625rem solid #9b9b9b2f !important;
+    border: 0.0625rem solid var(--gray) !important;
     padding: 0 !important;
     position: relative;
     margin-top: 1.25rem;
@@ -58,7 +58,7 @@
     background-color: transparent;
     border: none;
     outline: none;
-    border-right: 0.0625rem solid #9b9b9b2f;
+    border-right: 0.0625rem solid var(--gray);
     width:80%;
     padding: 0.9375rem 0.625rem;
     height: 100%;

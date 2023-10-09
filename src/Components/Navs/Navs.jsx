@@ -120,7 +120,7 @@ const Navs = () => {
         </ul>
 
         <div className="d-flex align-items-center ms-auto mb-3 me-5">
-          <Link className={styles.sign_btn}>
+          <Link to={'login'} className={styles.sign_btn}>
             <MainButton />
           </Link>
 

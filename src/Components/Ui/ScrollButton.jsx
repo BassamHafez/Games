@@ -15,7 +15,7 @@ const ScrollButton = () => {
     }
 
     return (
-    <motion.button onClick={scrollTop} whileHover={{scale:1.07}} style={{y:yBtn,opacity:opacityBtn}} className={styles.btn}>
+    <motion.button onClick={scrollTop} whileHover={{scale:1.07,x:-10}} style={{y:yBtn,opacity:opacityBtn}} className={styles.btn}>
         <FontAwesomeIcon icon={faAnglesUp} />
     </motion.button>
   )

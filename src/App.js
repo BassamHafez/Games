@@ -7,6 +7,8 @@ import Tournament from './Pages/Tournament/Tournament';
 import Shop from './Pages/Shop/Shop';
 import Contacts from './Pages/Contacts/Contacts';
 import News from './Pages/News/News';
+import Login from "./Pages/Login/Login";
+import Register from './Pages/Register/Register';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,8 @@ const router = createBrowserRouter([
       {path:"shop",element:<Shop/>},
       {path:"news",element:<News/>},
       {path:"contacts",element:<Contacts/>},
+      {path:"login",element:<Login/>},
+      {path:"register",element:<Register/>},
     ],
   },
 ]);
@@ -29,3 +33,4 @@ function App() {
 
 export default App;
 //https://mykd-next-js.vercel.app/
+

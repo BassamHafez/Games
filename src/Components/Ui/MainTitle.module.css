@@ -1,0 +1,26 @@
+
+.login_caption{
+    text-align: center;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+.login_caption h2{
+    font-size: 100px;
+    font-weight: 900;
+    color: #0B0E13;
+    text-shadow: -1px 1px 5px rgb(145, 144, 144);
+    opacity: .5;
+    font-family: var(--roboto);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.login_caption h4{
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    
+}

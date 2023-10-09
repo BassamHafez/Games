@@ -1,0 +1,9 @@
+.poly_button{
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--main_color);
+    color: #0F161B;
+    padding: 12px 30px;
+    -webkit-clip-path: polygon(100% 0,100% 65%,89% 100%,0 100%,0 0);
+     clip-path: polygon(100% 0,100% 65%,89% 100%,0 100%,0 0);
+}

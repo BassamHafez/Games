@@ -1,4 +1,4 @@
-.header{
+.header,.headerTwo_container{
     min-height: 100vh;
     overflow: hidden;
     padding-top: 3.125rem;
@@ -9,6 +9,81 @@
     justify-content: center;
     position: relative;
 }
+.headerTwo_container{
+    min-height: 80vh;
+    background-image: url(../../images/headerCover.jpg);
+    background-position: 50% 50%;
+    position: relative;
+}
+.headerTwo_container div h2{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: var(--poppins);
+    margin-bottom: 30px;
+}
+.headerTwo_container div a{
+    font-weight: 700;
+    font-family: var(--poppins);
+    transition: color .5s;
+    position: relative;
+}
+
+.headerTwo_container div a::after{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color:white;
+    position: absolute;
+    left: -120%;
+    top: 50%;
+    transition: all .5s;
+
+}
+.headerTwo_container div a::before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color:white;
+    position: absolute;
+    right: -120%;
+    top: 50%;
+    transition: all .5s;
+}
+.headerTwo_container div a:hover::after{
+    left: -200%;
+    background-color: var(--main_color);
+}
+.headerTwo_container div a:hover::before{
+    right: -200%;
+    background-color: var(--main_color);
+
+}
+.headerTwo_container div a:hover{
+    color: var(--golden);
+}
+
+.headerTwo_container::after{
+    content: '';
+    width: 50%;
+    height: 8%;
+    background-color: var(--main_color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   -webkit-clip-path: polygon(0 0,0 100%,100% 100%);
+    clip-path: polygon(0 0,0 100%,100% 100%);
+}
+.headerTwo_container::before{
+    content: '';
+    width: 50%;
+    height: 5%;
+    background-color: var(--main_color);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-clip-path: polygon(100% 0,0 100%,100% 100%);
+    clip-path: polygon(100% 0,0 100%,100% 100%);
+}
 
 .caption{
     padding: 1.25rem;
@@ -16,7 +91,7 @@
 }
 .caption h1{
     font-size: 6.25rem;
-    color: white;
+    color: rgb(238, 238, 238);
     text-shadow: -0.0625rem 0.3125rem 0 var(--green);
     font-weight: 900;
     font-family: var(--roboto);
