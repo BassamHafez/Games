@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 const LoginForm = () => {
   return (
     <div className=" w-75 m-auto mt-5 d-flex flex-column align-items-center justify-content-center">
-      <MainTitle title='Sign Up'/>
+      <MainTitle title='Sign In'/>
       <form className={styles.form}>
         <div className={`${styles.input_filed} my-4`}>
-          <input type="name" name="name" placeholder="Name *" />
+          <input type="email" name="email" placeholder="Email *" />
         </div>
         <div className={`${styles.input_filed} my-4`}>
           <input type="password" name="password" placeholder="password *" />
