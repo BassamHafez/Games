@@ -1,0 +1,7 @@
+.error_paragraph{
+    color: red;
+    font-size: 18px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}

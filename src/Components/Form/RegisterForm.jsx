@@ -9,6 +9,7 @@ import MainTitle from "../Ui/MainTitle";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string, number } from "yup";
+import InputErrorText from "../Ui/InputErrorText";
 
 const RegisterForm = () => {
   const initialValues = {
@@ -36,37 +37,45 @@ const RegisterForm = () => {
   return (
     <div className="mt-5 d-flex flex-column align-items-center justify-content-center">
       <MainTitle title="Sign Up" />
-
       <Formik
         initialValues={initialValues}
         onSubmit={onSubmit}
         validationSchema={validationSchema}
       >
         <Form className={styles.form}>
-          <div className="d-flex w-100">
-            <div className={`${styles.input_filed} my-4 mx-2`}>
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
               <Field type="name" name="first_name" placeholder="First name *" />
-              <ErrorMessage name="first_name" component={"p"} />
             </div>
-            <div className={`${styles.input_filed} my-4  mx-2`}>
+            <ErrorMessage name="first_name" component={InputErrorText} />
+          </div>
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
               <Field type="name" name="last_name" placeholder="Last name *" />
-              <ErrorMessage name="last_name" component={"p"} />
             </div>
+            <ErrorMessage name="last_name" component={InputErrorText} />
           </div>
 
-          <div className={`${styles.input_filed} my-4`}>
-            <Field type="email" name="email" placeholder="Email *" />
-            <ErrorMessage name="email" component={"p"} />
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
+              <Field type="email" name="email" placeholder="Email *" />
+            </div>
+            <ErrorMessage name="email" component={InputErrorText} />
           </div>
-          <div className={`${styles.input_filed} my-4`}>
-            <Field type="password" name="password" placeholder="password *" />
-            <ErrorMessage name="password" component={"p"} />
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
+              <Field type="password" name="password" placeholder="password *" />
+            </div>
+            <ErrorMessage name="password" component={InputErrorText} />
           </div>
-          <div className={`${styles.input_filed} my-4`}>
-            <Field type="age" name="age" placeholder="Age *" />
-            <ErrorMessage name="age" component={"p"} />
+
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
+              <Field type="age" name="age" placeholder="Age *" />
+            </div>
+            <ErrorMessage name="age" component={InputErrorText} />
           </div>
-          <div className="w-100">
+          <div className="w-100 mt-5">
             <MainButtonPolygon text="Register Now" type="submit" />
           </div>
           <span className={styles.or_span}>or</span>

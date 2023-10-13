@@ -1,14 +1,14 @@
-import React from 'react';
-import RegisterForm from '../../Components/Form/RegisterForm';
-import HeaderTwo from '../../Components/Header/HeaderTwo';
+import React from "react";
+import RegisterForm from "../../Components/Form/RegisterForm";
+import HeaderTwo from "../../Components/Header/HeaderTwo";
 
 const Register = () => {
   return (
     <>
-      <HeaderTwo/>
-    <RegisterForm/>
+      <HeaderTwo />
+      <RegisterForm />
     </>
-  )
-}
+  );
+};
 
-export default Register
+export default Register;
