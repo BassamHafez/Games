@@ -4,21 +4,35 @@ import MainButtonPolygon from "../Ui/MainButtonPolygon";
 import google from "../../images/google.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import {motion } from "framer-motion";
+import { motion } from "framer-motion";
 import MainTitle from "../Ui/MainTitle";
 import { Link } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { object, string } from "yup";
 import InputErrorText from "./../Ui/InputErrorText";
+import { useMutation } from "@tanstack/react-query";
+import { formHandler } from "../util/Http";
 
 const LoginForm = () => {
+  // const navigate = useNavigate();
+
+  const { mutate } = useMutation({
+    mutationFn: formHandler,
+    onSuccess: () => {
+      console.log("tm");
+    },
+  });
+
   const initialValues = {
     email: "",
     password: "",
   };
+
   const onSubmit = (values) => {
     console.log(values);
+    mutate({ type: "signin", formData: values });
   };
+
   const validationSchema = object({
     email: string().email("email not valid").required("email required"),
     password: string()
@@ -35,25 +49,23 @@ const LoginForm = () => {
         validationSchema={validationSchema}
       >
         <Form className={styles.form}>
-
-        <div className="w-100 my-4 position-relative">
-          <div className={styles.input_filed}>
-            <Field
-              key="field"
-              type="email"
-              name="email"
-              placeholder="Email *"
-            />
-            
-          </div>
-          <ErrorMessage key="error" name="email" component={InputErrorText} /> 
+          <div className="w-100 my-4 position-relative">
+            <div className={styles.input_filed}>
+              <Field
+                key="field"
+                type="email"
+                name="email"
+                placeholder="Email *"
+              />
+            </div>
+            <ErrorMessage key="error" name="email" component={InputErrorText} />
           </div>
 
           <div className="w-100 my-4 position-relative">
-          <div className={styles.input_filed}>
-            <Field type="password" name="password" placeholder="password *" />
-          </div>
-          <ErrorMessage name="password" component={InputErrorText} />
+            <div className={styles.input_filed}>
+              <Field type="password" name="password" placeholder="password *" />
+            </div>
+            <ErrorMessage name="password" component={InputErrorText} />
           </div>
           <div className="w-100 mt-5">
             <MainButtonPolygon type="submit" text="Login Now" />
