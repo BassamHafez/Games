@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./LoginForm.module.css";
 import MainButtonPolygon from "../Ui/MainButtonPolygon";
 import google from "../../images/google.png";
@@ -34,6 +34,11 @@ const RegisterForm = () => {
       .max(100, "only for under 100 years old")
       .required("age is required"),
   });
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
   return (
     <div className="mt-5 d-flex flex-column align-items-center justify-content-center">
       <MainTitle title="Sign Up" />

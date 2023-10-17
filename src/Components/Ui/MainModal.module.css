@@ -1,0 +1,38 @@
+
+.mod_body,.mod_header,.mod_footer{
+    background-color: #0B0E13 !important;
+    border:1px solid var(--golden) !important;
+    border-top:none !important;
+    border-bottom:none !important;
+    color:rgb(189, 189, 189);
+}
+.mod_header{
+    border-top:1px solid var(--golden) !important;
+    color:var(--golden);
+    font-weight: 800;
+}
+ /* .mod_body{
+        border-bottom: none !important;
+    } */
+.mod_footer{
+        border-bottom:1px solid var(--golden) !important;
+}
+.mod_footer button{
+    border: none;
+    color: black;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color .3s ;
+}
+.signup_btn{
+    background-color: var(--golden);
+}
+
+.close_btn{
+    background-color:rgb(212, 212, 212);
+}
+
+.mod_footer button:hover{
+    background-color: var(--main_color);
+}
