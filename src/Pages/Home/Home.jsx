@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../../Components/Header/Header";
 import styles from './Home.module.css';
 import { Container,Row } from "react-bootstrap";
@@ -10,7 +10,10 @@ import NftCards from "../../Components/Ui/NftCards";
 
 
 const Home = () => {
-
+  
+useEffect(()=>{
+  window.scrollTo(0, 0);
+})
 
   return (
     <>

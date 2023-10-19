@@ -46,38 +46,7 @@
 .ordered_list li:hover{
     color: var(--main_color);
 }
-.subscribe_container{
-    background-color: transparent !important;
-    border: 0.0625rem solid var(--gray) !important;
-    padding: 0 !important;
-    position: relative;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-}
-.subscribe_container input{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    border-right: 0.0625rem solid var(--gray);
-    width:80%;
-    padding: 0.9375rem 0.625rem;
-    height: 100%;
-    color: #b8b8b8;
-}
-.send_icon{
-    position: absolute;
-    right: 6%;
-    top: 50%;
-    transform: translate(-6%,-50%);
-    color: var(--main_color);
-    font-size: 1.25rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: color .5s;
-}
-.send_icon:hover{
-    color: var(--golden);
-}
+
 .subscribe_text{
     color: #b8b8b8;
 }

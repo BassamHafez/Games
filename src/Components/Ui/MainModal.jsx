@@ -4,6 +4,7 @@ import styles from "./MainModal.module.css";
 import { Link } from "react-router-dom";
 
 const MainModal = (props) => {
+ const textContent= props.type==='signin'?"If you don't have an account create one for free.":"Please check your information you inserted";
   return (
     <Modal
       {...props}
@@ -18,13 +19,13 @@ const MainModal = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body className={styles.mod_body}>
-        <h5> If you don't have an account create one for free.</h5>
+        <h5>{textContent}</h5>
       </Modal.Body>
       <Modal.Footer className={styles.mod_footer}>
         <button className={styles.close_btn} onClick={props.onHide}>
           Close
         </button>
-        <Link to='/register'><button className={styles.signup_btn}>Sign Up</button></Link>
+        {props.type==='signin'?<Link to='/register'><button className={styles.signup_btn}>Sign Up</button></Link>:<button  onClick={props.onHide} className={styles.signup_btn}>Continue</button>}
       </Modal.Footer>
     </Modal>
   );

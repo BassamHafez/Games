@@ -3,8 +3,9 @@ import styles from "./SideBar.module.css";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import logo from "../../images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faKhanda, faShare } from "@fortawesome/free-solid-svg-icons";
+import { faKhanda } from "@fortawesome/free-solid-svg-icons";
 import ContactsIcon from "./ContactsIcon";
+import EmailField from "./EmailField";
 
 const SideBar = ({onClose,show}) => {
   const handleClose = () => {
@@ -38,10 +39,7 @@ const SideBar = ({onClose,show}) => {
         <h6 className={`special_main_color mt-5 ${styles.contact}`}>
           SUBSCRIBE
         </h6>
-        <div className={`${styles.subscribe_container} form-control`}>
-          <input type="text" placeholder="Get News & Updates" />
-          <FontAwesomeIcon className={styles.send_icon} icon={faShare} />
-        </div>
+        <EmailField/>
         <p className={styles.subscribe_text}>
           Subscribe dolor sitamet, consectetur adiping eli. Duis esollici tudin
           augue.

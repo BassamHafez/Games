@@ -12,7 +12,7 @@
     position: relative;
 }
 .white_button:hover{
-    background-color:white;
+    background-color:var(--golden);
 }
 .white_button:hover .arrow_left {
     left: -20%;

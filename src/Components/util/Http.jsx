@@ -6,9 +6,7 @@ export const formHandler = async ({ type, formData }) => {
       `https://movies-api.routemisr.com/${type}`,
       formData
     );
-    if(data.message!=='success'){
       return data.message;
-    }
   } catch (error) {
     if (error.response) {
       const error = new Error('An error occured while signing please try again later!')
